@@ -40,7 +40,7 @@ def init_process(args):
         df_init_params = pd.DataFrame(np.array(init_para_list),columns = ['a','b','theta','status'])
         df_init_params.to_csv(init_params_csv,index=False)
     
-    get_init_para_csv(auto_dir,monomer_name)
+    get_init_para_csv(auto_dir)
     
     auto_csv_path = os.path.join(auto_dir,'step1.csv')
     if not os.path.exists(auto_csv_path):        
